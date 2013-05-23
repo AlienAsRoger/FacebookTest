@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+  	<!-- Rounded buttons -->
+	<dimen name="rounded_button_radius">3dip</dimen>
+
+
+  	<dimen name="rounded_button_height">48dip</dimen>
+	<dimen name="rounded_button_padding_disabled">0dip</dimen>
+	<dimen name="rounded_button_padding_top">0dip</dimen>
+	<dimen name="rounded_button_padding_left">0dip</dimen>
+	<dimen name="rounded_button_padding_right">0dip</dimen>
+	<dimen name="rounded_button_padding_bottom">0dip</dimen>
+
+  	<dimen name="default_field_height">37dip</dimen>
+  	<dimen name="default_button_text_size">16sp</dimen>
+    <dimen name="default_list_item_height">48dip</dimen>
+  	<dimen name="default_button_height">40dip</dimen>    <!--Plus glow borders-->
+ 	<dimen name="signin_button_height">50dip</dimen>
+    <dimen name="default_stroke_width">4px</dimen>
+    <dimen name="default_bevel_size">1dip</dimen>
+    <dimen name="default_bevel_glassy_size">1px</dimen>
+    <!--<dimen name="rect_edge_offset">2dip</dimen>-->
+    <!--<dimen name="rect_edge_offset">2dip</dimen>-->
+
+    <!--New Buttons and Fields-->
+    <dimen name="facebook_button_height">40dip</dimen>
+    <dimen name="main_button_height">44dip</dimen>
+    <dimen name="big_button_height">56dip</dimen>
+    <dimen name="small_button_height">35dip</dimen>
+    <dimen name="small_orange_button_height">33dip</dimen>
+    <dimen name="grey_button_height">42dip</dimen>
+    <dimen name="new_edit_field_height">40dip</dimen>
+    <dimen name="new_tab_button_height">48dip</dimen>
+    <dimen name="button_min_width">68dip</dimen>
+    <dimen name="wide_button_min_width">108dip</dimen>
+
+    <!--Edit Fields Padding-->
+    <dimen name="new_edit_field_padding_top">5dip</dimen>
+    <dimen name="new_edit_field_padding_left">14dip</dimen>
+    <dimen name="new_edit_field_padding_right">14dip</dimen>
+    <dimen name="new_edit_field_padding_bottom">4dip</dimen>
+
+    <!--Round list item-->
+    <dimen name="round_list_item_padding_top">10dip</dimen>
+    <dimen name="round_list_item_padding_left">14dip</dimen>
+    <dimen name="round_list_item_padding_right">14dip</dimen>
+    <dimen name="round_list_item_padding_bottom">4dip</dimen>
+
+
+	<!--Login fb-->
+    <dimen name="button_login_fb_left_padding">6dip</dimen>
+
+
+    <dimen name="list_item_image_size">26dip</dimen>
+ 	<dimen name="list_item_stroke_width">1px</dimen>
+ 	
+
+				
+ 	<dimen name="home_main_padding_top">20dip</dimen>
+ 	<dimen name="home_main_padding_bot">20dip</dimen>
+ 	<dimen name="home_main_padding_left">20dip</dimen>
+ 	<dimen name="home_main_padding_right">20dip</dimen>
+
+	<!--Dashboard-->
+	<dimen name="dashboard_padding_top">21dip</dimen>
+	<dimen name="dashboard_padding_bot">68dip</dimen>
+	<dimen name="dashboard_padding_side">21dip</dimen>
+
+ 	<dimen name="smallLogo_width">218dip</dimen>
+	<dimen name="smallLogo_height">89dip</dimen>
+	 	
+	<dimen name="pressed_text_size">16sp</dimen>
+		
+	
+	<dimen name="list_item_padding">5dip</dimen>
+	<dimen name="list_item_image_marging">5dip</dimen>
+	<dimen name="list_item_text_size">17sp</dimen>
+	<dimen name="list_item_height">48dip</dimen>
+	<dimen name="list_padding_top">10dip</dimen>
+		
+    <dimen name="text_size_small">16sp</dimen>
+
+	<!--LiveScreen-->
+	<dimen name="live_scr_top_padding">16dip</dimen>
+	<dimen name="live_layout_mTop">10dip</dimen>
+	<dimen name="live_challenges_textSize">16sp</dimen>
+	<dimen name="live_grid_hotizontal_spacing">10dip</dimen>
+	<dimen name="live_grid_padding_top">10dip</dimen>
+	<dimen name="live_grid_padding_bottom">10dip</dimen>
+
+
+	<!--Default screen-->
+	<dimen name="default_scr_top_padding">15dip</dimen>
+	<dimen name="default_scr_side_padding">15dip</dimen>
+	<dimen name="default_scr_bottom_padding">10dip</dimen>
+
+	<!--Default margins between screen widgets-->
+
+	<dimen name="margin_top_between_buttons">10dip</dimen>
+	<!--Linear Description paddings-->
+	<dimen name="default_linear_bottom_padding">2dip</dimen>
+	<dimen name="default_linear_top_padding">2dip</dimen>
+	<dimen name="default_linear_left_padding">5dip</dimen>
+	<dimen name="default_linear_right_padding">5dip</dimen>
+
+	<!--SigIn-->
+	<!--<dimen name="signin_scr_top_padding">20dip</dimen>-->
+	<!--<dimen name="signin_scr_bottom_padding">20dip</dimen>-->
+	<dimen name="signin_scr_top_padding">15dip</dimen>
+	<dimen name="signin_scr_bottom_padding">48dip</dimen>
+	<dimen name="signin_scr_side_padding">40dip</dimen>
+	<dimen name="signin_logo_margin_top">55dip</dimen>
+	<dimen name="signin_main_margin_top">53dip</dimen>
+    <!--Welcome-->
+    <dimen name="welcome_logo_margin_top">20dip</dimen>
+
+	<!--Game Modes-->
+	<dimen name="game_submit_buttons_lay_bot_padding">10dip</dimen>
+	<dimen name="player_name_max_width">140dip</dimen>
+	<dimen name="game_label_padding_top">2dip</dimen>
+	<dimen name="game_end_layout_padding_bottom">8dip</dimen>
+	<dimen name="game_end_layout_padding_side">7dip</dimen>
+	<dimen name="game_label_text_size">14sp</dimen>
+
+
+	<!--ControlsBaseView-->
+	<dimen name="game_control_padding_left">10dip</dimen>
+	<dimen name="game_control_padding_right">10dip</dimen>
+	<!--<dimen name="game_control_padding_top">15dip</dimen>-->
+	<dimen name="game_control_padding_top">0dip</dimen>
+	<dimen name="game_control_padding_bottom">0dip</dimen>
+	<!--<dimen name="game_control_padding_bottom">5dip</dimen>-->
+
+	<dimen name="piece_layout_padding_left">7dip</dimen>
+	<dimen name="piece_layout_padding_right">0dip</dimen>
+	<dimen name="piece_layout_padding_top">1dip</dimen>
+	<dimen name="piece_layout_padding_bottom">2dip</dimen>
+
+	<dimen name="player_indicator_size">10dip</dimen>
+	<dimen name="player_indicator_size1">9dip</dimen>
+
+	<!--Popup-->
+	<dimen name="ad_popup_width">300dip</dimen>
+	<dimen name="ad_popup_height">220dip</dimen>
+	<dimen name="game_end_popup_text_size">18sp</dimen>
+
+	<!--Pending load-->
+	<dimen name="pending_progress_bar_size">40dip</dimen>
+
+
+    <!--New Design-->
+
+    <!--Sliding Menu-->
+    <dimen name="menu_item_padding">10dp</dimen>
+    <dimen name="menu_header_padding_top">8dp</dimen>
+    <dimen name="menu_header_line">3dp</dimen>
+    <dimen name="menu_icon_side">40dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+    <!--Nav Menu-->
+    <dimen name="new_nav_menu_item_height">56dip</dimen>
+    <dimen name="new_nav_menu_image_padding_left">14dip</dimen>
+
+    <!--Common-->
+    <dimen name="common_button_margin_top">23dip</dimen>
+    <dimen name="common_main_hit_button_margin_top">10dip</dimen>
+
+    <!--Create Profile-->
+    <dimen name="create_profile_logo_margin_top">35dip</dimen>
+    <dimen name="create_profile_main_margin_top">32dip</dimen>
+    <dimen name="create_profile_field_margin_top">35dip</dimen>
+    <dimen name="create_profile_skip_padding_top">15dip</dimen>
+
+    <!--Invite Screen-->
+    <dimen name="invite_logo_margin_top">35dip</dimen>
+    <dimen name="invite_facebook_margin_top">34dip</dimen>
+    <dimen name="new_signup_field_margin_top">18dip</dimen>
+    <dimen name="new_signup_facebook_margin_bottom">18dip</dimen>
+    <dimen name="new_setup_small_fonts_size">14sp</dimen>
+
+    <!--Daily Games-->
+    <dimen name="new_daily_games_header_height">36dip</dimen>
+    <dimen name="home_games_bottom_button_height">40dip</dimen>
+    <dimen name="new_game_frame_padding_side">14dip</dimen>
+    <dimen name="new_daily_games_item_height">53dip</dimen>
+
+    <!--SeekBar-->
+    <dimen name="seek_radius">10dip</dimen>
+    <dimen name="seek_stroke_width">1dip</dimen>
+    <dimen name="seek_thumb_padding">8dip</dimen>
+
+    <!--Switch Dark-->
+    <dimen name="button_switch_dark_width">83dip</dimen>
+    <dimen name="button_switch_dark_height">26dip</dimen>
+    <dimen name="button_switch_back_corners">24dip</dimen>
+    <dimen name="button_switch_white_back_corners">51dip</dimen>
+    <dimen name="button_switch_corners">51dip</dimen>
+    <dimen name="button_switch_inner_offset">5dip</dimen>
+    <!--White-->
+    <dimen name="button_switch_white_width">77dip</dimen>
+    <dimen name="button_switch_white_height">27dip</dimen>
+
+    <!--Friends-->
+    <dimen name="new_button_square_size">37dip</dimen>
+
+    <!--Videos-->
+    <dimen name="video_play_btn_back_ring_size">43dip</dimen>
+    <dimen name="video_play_btn_back_ring_size_big">100dip</dimen>
+    <dimen name="video_play_btn_back_ring_size_medium">80dip</dimen>
+
+
+    <dimen name="common_list_thumb_size">45dip</dimen>
+
+    <!--Stats-->
+    <dimen name="stats_rating_view_height">56dip</dimen>
+    <dimen name="stats_padding_side">15dip</dimen>
+    <dimen name="stats_rating_list_item_font">13sp</dimen>
+
+    <!--Upgrade-->
+    <dimen name="button_upgrade_height">75dip</dimen>
+    <dimen name="button_upgrade_radius">4dip</dimen>
+    <dimen name="button_upgrade_toggle_radius">4dip</dimen>
+    <dimen name="button_checkmark_radius">3dip</dimen>
+    <dimen name="button_checkmark_size">34dip</dimen>
+
+    <!--Welcome-->
+    <dimen name="view_pager_indicator_size">8dip</dimen>
+    <dimen name="home_rating_list_height">343dip</dimen>
+    <dimen name="friends_grid_height">120dip</dimen>
+    <dimen name="country_flag_size">25dip</dimen>
+
+    <dimen name="panel_info_height">36dip</dimen>
+    <dimen name="notations_view_height">36dip</dimen>
+    <dimen name="panel_info_padding_top">5dip</dimen>
+    <dimen name="panel_info_player_text_size">12dip</dimen>
+    <dimen name="panel_info_avatar_margin_right">7dip</dimen>
+    <dimen name="panel_info_avatar_size">22dip</dimen>
+    <dimen name="panel_info_avatar_big_size">35dip</dimen>
+    <dimen name="panel_info_captured_pieces_height">22dip</dimen>
+    <dimen name="panel_info_captured_pieces_width">125dip</dimen>
+    <dimen name="panel_info_time_left_size">24sp</dimen>
+    <dimen name="notations_text_size">14sp</dimen>
+    <dimen name="notations_margin_top">0dip</dimen>
+    <dimen name="default_header_height">45dip</dimen>
+
+    <!--GameControlsView-->
+    <dimen name="game_controls_button_height">48dip</dimen>
+    <dimen name="game_controls_icon_size">20dip</dimen>
+    <dimen name="video_thumb_size">120dip</dimen>
+    <dimen name="img_profile_size_big">80dip</dimen>
+    <dimen name="new_signup_title_padding_bottom">16dip</dimen>
+    <dimen name="new_tactics_panel_info_height">58dip</dimen>
+    <dimen name="quick_action_item_min_width">80dip</dimen>
+
+    <!--Tactics Top Panel-->
+    <dimen name="new_tactics_top_result_text_size">15sp</dimen>
+    <dimen name="new_tactics_clock_icon_size">21dip</dimen>
+    <dimen name="new_tactics_clock_text_size">16sp</dimen>
+    <dimen name="new_tactics_rating_text_size">24sp</dimen>
+    <dimen name="new_tactics_rating_change_text_size">18sp</dimen>
+    <dimen name="home_play_live_labels_padding_side">25dip</dimen>
+    <dimen name="new_right_live_option_button_width">88dip</dimen>
+    <dimen name="daily_list_item_image_size">30dip</dimen>
+    <dimen name="header_title_size">15sp</dimen>
+    <dimen name="rect_edge_offset">1dip</dimen>
+</resources>

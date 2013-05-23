@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FacebookTest</string>
+    <string name="applicationId">248677718605629</string>
+    <string name="instructions">create link</string>
+    <string name="login">login</string>
+</resources>

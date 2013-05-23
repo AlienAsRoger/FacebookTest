@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:chess="http://schemas.android.com/apk/res/com.chess">
+
+    <style name="ActionBarCompatBackground" >
+
+    </style>
+    
+
+	<style name="Text" parent="@android:style/TextAppearance.Small">
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColor">@color/new_normal_grey</item>
+		<item name="android:textStyle">normal</item>
+	</style>
+
+	<style name="Text.Button">
+		<item name="android:focusable">true</item>
+		<item name="android:clickable">true</item>
+		<item name="android:textSize">@dimen/default_button_text_size</item>
+		<item name="android:gravity">center</item>
+		<item name="android:paddingLeft">16dip</item>
+		<item name="android:paddingRight">16dip</item>
+		<item name="android:paddingTop">1dip</item>
+		<item name="android:paddingBottom">1dip</item>
+		<item name="android:layout_marginTop">2dip</item>
+		<item name="android:layout_marginBottom">2dip</item>
+		<item name="android:minWidth">@dimen/button_min_width</item>
+		<item name="android:minHeight">@dimen/main_button_height</item>
+
+        <!--Add Shadow Top to text-->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowColor">@color/back_shadows_chess</item>
+        <item name="android:shadowRadius">0.5</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1.0</item>
+
+	</style>
+
+    <style name="Button.Upgrade" parent="Button.Blue" >
+        <item name="android:minWidth">@dimen/wide_button_min_width</item>
+        <item name="android:minHeight">@dimen/small_orange_button_height</item>
+    </style>
+
+    <style name="Button.Share" parent="Button.Blue.Light" >
+        <item name="android:minHeight">@dimen/small_orange_button_height</item>
+        <item name="android:minWidth">@dimen/wide_button_min_width</item>
+    </style>
+
+    <style name="GlyphIcon">
+        <item name="android:padding">@dimen/glyph_icon_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/glyph_icon_default</item>
+        <item name="ttf">Icon</item>
+    </style>
+
+    <style name="GlyphIcon.Small">
+        <item name="android:textSize">@dimen/glyph_icon_small</item>
+    </style>
+
+    <style name="GlyphIcon.Big">
+        <item name="android:textSize">@dimen/glyph_icon_big</item>
+    </style>
+
+    <style name="HeaderTitle">
+        <item name="android:textSize">@dimen/header_title_size</item>
+        <item name="ttf">Bold</item>
+    </style>
+
+    <style name="HeaderTitle.Light">
+        <item name="android:textColor">@color/new_list_header_text</item>
+    </style>
+
+    <style name="HeaderTitle.Dark">
+        <item name="android:textColor">@color/new_subtitle_dark_grey</item>
+    </style>
+
+
+
+    <style name="list_text" >
+        <!--<item name="android:textColor">@color/text_black</item>-->
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/list_item_text_size</item>
+    </style>
+
+    <style name="HomeLiveOptionsButton" parent="Button.Glassy.Small">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">2dip</item>
+        <item name="android:layout_margin">1px</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="RightLiveOptionsButton" parent="Button.Glassy.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@dimen/new_right_live_option_button_width</item>
+        <item name="android:padding">2dip</item>
+        <item name="android:layout_margin">1px</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+
+    <style name="NotationsStyle" parent="ListItem.Header.Dark">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginTop">@dimen/notations_margin_top</item>
+    </style>
+
+    <style name="DefaultEdt">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <!--<item name="android:background">@drawable/edit_white_one_selector</item>-->
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:minHeight">@dimen/default_field_height</item>
+        <item name="android:paddingBottom">7dip</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textColorHint">@color/hint_text</item>
+		<item name="android:layout_marginTop">2dip</item>
+		<item name="android:layout_marginBottom">2dip</item>
+    </style>
+
+    <style name="DefaultEdt.Empty">
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">20dip</item>
+    </style>
+
+    <style name="DefaultListView">
+        <item name="android:background">@null</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0px</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:listSelector">@color/transparent</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+	<style name="DefaultAutoComplete" parent="DefaultEdt" >
+		<!--<item name="android:completionHintView">@layout/simple_dropdown_hint</item>-->
+		<item name="android:completionThreshold">2</item>
+		<item name="android:dropDownSelector">@android:drawable/list_selector_background</item>
+		<item name="android:popupBackground">@android:drawable/spinner_dropdown_background</item>
+		<item name="android:dropDownVerticalOffset">-6dip</item>
+		<item name="android:dropDownHorizontalOffset">0dip</item>
+		<item name="android:dropDownWidth">wrap_content</item>
+	</style>
+
+    <style name="DashboardItemText" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+
+    <style name="Spinner" parent="@android:style/Widget.Spinner">
+        <item name="android:drawSelectorOnTop">true</item>
+        <!--<item name="android:background">@drawable/edit_grey_one_default</item>-->
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hint_text</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:selectable">true</item>
+    </style>
+
+    <style name="SpinnerDropDown" parent="Text">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SpinnerText" parent="Text">
+        <item name="android:textColor">@color/hint_text</item>
+    </style>
+
+    <style name="CheckBox" parent="android:Widget.CompoundButton.CheckBox">
+        <!--<item name="android:button">@drawable/btn_check_selector</item>-->
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hint_text</item>
+        <item name="android:textStyle">normal</item>
+		<item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <style name="RadioButton" parent="android:Widget.CompoundButton.RadioButton">
+        <!--<item name="android:button">@drawable/btn_radio_selector</item>-->
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+		<item name="android:layout_marginTop">2dip</item>
+		<item name="android:layout_marginBottom">2dip</item>
+		<item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="SeekBar" parent="android:style/Widget.SeekBar">
+        <!--<item name="android:progressDrawable">@drawable/progress_horizontal</item>-->
+        <!--<item name="android:indeterminateDrawable">@drawable/progress_horizontal</item>-->
+        <!--<item name="android:thumb">@drawable/seek_thumb_selector</item>-->
+        <item name="android:thumbOffset">8dip</item>
+        <item name="android:paddingLeft">7dip</item>
+        <item name="android:paddingRight">7dip</item>
+        <item name="android:minHeight">14dip</item>
+        <item name="android:maxHeight">14dip</item>
+    </style>
+
+    <style name="RatingSeekBar" parent="android:style/Widget.SeekBar">
+        <!--<item name="android:progressDrawable">@drawable/progress_horizontal</item>-->
+        <!--<item name="android:progressDrawable">@drawable/progress_seek_temp</item>-->
+        <!--<item name="android:progressDrawable">@drawable/empty</item>-->
+        <!--<item name="android:indeterminateDrawable">@drawable/empty</item>-->
+        <!--<item name="android:thumb">@drawable/seek_thumb_selector</item>-->
+        <item name="android:thumbOffset">8dip</item>
+        <item name="android:paddingLeft">7dip</item>
+        <item name="android:paddingRight">7dip</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <!--Home Tabs-->
+    <style name="TabRadioButton" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/new_light_grey</item>
+		<item name="android:gravity">center</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:minHeight">@dimen/new_tab_button_height</item>
+        <item name="ttf">Bold</item>
+    </style>
+
+    <style name="TabRadioButton.Left" >
+        <!--<item name="android:background">@drawable/button_tab_home_left_selector</item>-->
+    </style>
+
+    <style name="TabRadioButton.Middle" >
+        <!--<item name="android:background">@drawable/button_tab_home_middle_selector</item>-->
+    </style>
+
+    <style name="TabRadioButton.Right" >
+        <!--<item name="android:background">@drawable/button_tab_home_right_selector</item>-->
+    </style>
+
+    <!--Upgrade-->
+    <style name="RoundRadioButton" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/new_text_blue</item>
+		<item name="android:gravity">center</item>
+        <item name="android:minHeight">32dip</item>
+        <item name="ttf">Bold</item>
+    </style>
+
+    <style name="RoundRadioButton.Left" >
+        <!--<item name="android:background">@drawable/button_upgrade_toggle_left_selector</item>-->
+    </style>
+
+    <style name="RoundRadioButton.Middle" >
+        <!--<item name="android:background">@drawable/button_upgrade_toggle_middle_selector</item>-->
+    </style>
+
+    <style name="RoundRadioButton.Right" >
+        <!--<item name="android:background">@drawable/button_upgrade_toggle_right_selector</item>-->
+    </style>
+
+	<style name="SettingsDividerText" parent="Text">
+		<item name="android:paddingTop">10dip</item>
+		<item name="android:paddingLeft">10dip</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="lineDivider" >
+		<item name="android:layout_marginBottom">5dip</item>
+	</style>
+
+    <style name="PageRadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:button">@drawable/empty</item>-->
+        <item name="android:layout_margin">5dip</item>
+        <item name="android:clickable">false</item>
+        <item name="android:textSize">1sp</item>
+        <!--<item name="android:background">@drawable/pager_indicator_selector</item>-->
+    </style>
+
+	<style name="LinearDescription">
+		<item name="android:weightSum">10</item>
+		<item name="android:paddingBottom">@dimen/default_linear_bottom_padding</item>
+		<item name="android:paddingTop">@dimen/default_linear_top_padding</item>
+		<item name="android:paddingLeft">@dimen/default_linear_left_padding</item>
+		<item name="android:paddingRight">@dimen/default_linear_right_padding</item>
+		<item name="android:gravity">center_vertical</item>
+	</style>
+
+	<style name="LinearListItem" parent="ListItem">
+		<item name="android:paddingLeft">15dip</item>
+		<item name="android:paddingRight">15dip</item>
+		<item name="android:minHeight">@dimen/default_list_item_height</item>
+		<item name="android:gravity">center_vertical</item>
+	</style>
+
+	<style name="SettingsListText">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:gravity">center_vertical</item>
+	</style>
+
+	<style name="GamePanelButton">
+		<item name="android:layout_weight">1</item>
+	</style>
+
+	<style name="CapturedPiece">
+		<item name="android:layout_weight">1</item>
+	</style>
+
+	<style name="GameLabel">
+		<item name="android:layout_centerVertical">true</item>
+		<item name="android:textSize">@dimen/game_label_text_size</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:paddingTop">@dimen/game_label_padding_top</item>
+		<item name="android:paddingBottom">@dimen/game_label_padding_top</item>
+	</style>
+
+	<style name="GameLabel.Timer">
+		<item name="android:drawablePadding">5dip</item>
+		<item name="android:maxWidth">@dimen/player_name_max_width</item>
+	</style>
+
+	<style name="GameLabel.Player">
+		<item name="android:drawablePadding">5dip</item>
+		<item name="android:maxWidth">@dimen/player_name_max_width</item>
+		<item name="android:ellipsize">marquee</item>
+		<item name="android:marqueeRepeatLimit">marquee_forever</item>
+	</style>
+
+    <style name="Switch">
+
+    </style>
+
+
+
+	<style name="DarkShadowBottom">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:shadowColor">@color/black</item>
+		<item name="android:shadowRadius">0.5</item>
+		<item name="android:shadowDx">0</item>
+		<item name="android:shadowDy">1.0</item>
+	</style>
+
+    <!--New Slide Menu Design Styles-->
+
+    <style name="GreyImageButton" parent="Button.Glassy">
+        <item name="color">@color/grey_button_1</item>
+        <item name="ttf">Bold</item>
+    </style>
+
+    <style name="WhiteGrayEditText">
+        <item name="android:singleLine">true</item>
+        <item name="color">@color/new_soft_grey</item>
+        <item name="android:minHeight">@dimen/new_edit_field_height</item>
+    </style>
+
+
+
+    <style name="SetupSmallFont">
+        <item name="android:textSize">@dimen/new_setup_small_fonts_size</item>
+        <item name="android:textColor">@color/new_light_grey</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>
