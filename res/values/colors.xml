@@ -226,8 +226,8 @@
     <color name="default_button_overlay_c">#88000000</color>
     <color name="glassy_button_overlay_p">#66000000</color>
     <color name="glassy_button_overlay_s">#99000000</color>
-    <color name="rect_button_overlay_p">#33000000</color>
-    <color name="rect_button_overlay_c">#12000000</color> <!--Good!-->
+    <color name="rect_button_overlay_p">#66000000</color>
+    <color name="rect_button_overlay_c">#33000000</color> <!--Good!-->
 
     <color name="transparent_button">#00100000</color>
     <color name="glassy_button">#33000000</color>

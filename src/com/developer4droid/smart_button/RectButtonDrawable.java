@@ -9,7 +9,6 @@ import android.graphics.drawable.LayerDrawable;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.RoundRectShape;
 import android.util.AttributeSet;
-import com.developer4droid.AppUtils;
 import com.developer4droid.FacebookTest.R;
 
 import java.util.ArrayList;
@@ -90,21 +89,12 @@ public class RectButtonDrawable extends ButtonDrawable {
 		int selectedOverlay = resources.getColor(R.color.default_button_overlay_s);
 		int checkedOverlay = resources.getColor(R.color.rect_button_overlay_c);
 
-		if (AppUtils.HONEYCOMB_PLUS_API ) {
-			pressedFilter = new PorterDuffColorFilter(pressedOverlay, PorterDuff.Mode.XOR);
-			selectedFilter = new PorterDuffColorFilter(selectedOverlay, PorterDuff.Mode.XOR);
-			checkedFilter = new PorterDuffColorFilter(checkedOverlay, PorterDuff.Mode.XOR);
-		} else {
-			pressedFilter = new LightingColorFilter(0x33FF0000, 1);
-			selectedFilter = new LightingColorFilter(0x33FFFF00, 1);
-			checkedFilter = new LightingColorFilter(0x33FF00FF, 1);
-		}
+		pressedFilter = new PorterDuffColorFilter(pressedOverlay, PorterDuff.Mode.DARKEN);
+		selectedFilter = new PorterDuffColorFilter(selectedOverlay, PorterDuff.Mode.DARKEN);
+		checkedFilter = new PorterDuffColorFilter(checkedOverlay, PorterDuff.Mode.DARKEN);
 
 
 		if (isCheckable()){
-//			if (!AppUtils.HONEYCOMB_PLUS_API ) {
-//				checkedFilter = new LightingColorFilter(Color.RED, 1);
-//			}
 			enabledFilter = checkedFilter;
 			checkedFilter = null;
 		} else {

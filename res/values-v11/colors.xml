@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_button_overlay_p">#44000000</color> <!--20% transparent black-->
+    <color name="default_button_overlay_s">#33FFFFFF</color>
+    <color name="default_button_overlay_c">#88000000</color>
+    <color name="glassy_button_overlay_p">#66000000</color>
+    <color name="glassy_button_overlay_s">#99000000</color>
+    <color name="rect_button_overlay_p">#33000000</color>
+    <color name="rect_button_overlay_c">#12000000</color> <!--Good!-->
+</resources>
