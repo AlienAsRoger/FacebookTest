@@ -474,11 +474,6 @@ public class ButtonDrawable extends StateListDrawable {
 		return super.onStateChange(states);
 	}
 
-	@Override
-	public boolean isStateful() {
-		return true;
-	}
-
 	protected void parseAttributes(Context context, AttributeSet attrs) {
 		// get style
 		TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.RoboButton);

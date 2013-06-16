@@ -1,71 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-    android:background="@color/white"
-    >
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
     <RadioGroup
         android:id="@+id/tabRadioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
+
         <com.developer4droid.RoboRadioButton
             android:id="@+id/leftTabBtn"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            style="@style/Rect.Tab.Left"
-            />
+            style="@style/Rect.Tab.Left" />
+
         <com.developer4droid.RoboRadioButton
             android:id="@+id/centerTabBtn"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            style="@style/Rect.Tab.Middle"
-            />
+            style="@style/Rect.Tab.Middle" />
+
         <com.developer4droid.RoboRadioButton
             android:id="@+id/rightTabBtn"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            style="@style/Rect.Tab.Right"
-            />
+            style="@style/Rect.Tab.Right" />
 
     </RadioGroup>
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="@color/action_bar_overlay"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/welcome"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Hello World, MainActivity"
-        />
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World, MainActivity" />
 
-    <Button
-        android:id="@+id/buttonLoginFragment"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="login"
-        />
+        <Button
+            android:id="@+id/buttonLoginFragment"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="login" />
 
-    <com.facebook.widget.LoginButton
-        android:id="@+id/loginFb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
+        <com.facebook.widget.LoginButton
+            android:id="@+id/loginFb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-    <FrameLayout
-        android:id="@+id/container_frame"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
-</LinearLayout>
+        <com.developer4droid.LinLayout
+            android:id="@+id/lin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ListItem"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hello osodpfasdfpasodkfpaokd" />
+        </com.developer4droid.LinLayout>
+
+        <com.developer4droid.RoboButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Button.Blue"
+            android:text="hi" />
+
+        <FrameLayout
+            android:id="@+id/container_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/customProgressBar"
+            android:layout_margin="25dip"
+            />
+
+    </LinearLayout>
 
 </LinearLayout>

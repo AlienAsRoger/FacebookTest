@@ -93,7 +93,6 @@ public class RectButtonDrawable extends ButtonDrawable {
 		selectedFilter = new PorterDuffColorFilter(selectedOverlay, PorterDuff.Mode.DARKEN);
 		checkedFilter = new PorterDuffColorFilter(checkedOverlay, PorterDuff.Mode.DARKEN);
 
-
 		if (isCheckable()){
 			enabledFilter = checkedFilter;
 			checkedFilter = null;

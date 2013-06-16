@@ -1,15 +1,18 @@
 package com.developer4droid.FacebookTest;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.text.TextUtils;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.facebook.Request;
@@ -21,7 +24,7 @@ import com.facebook.model.GraphUser;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-public class MainActivity extends Activity implements View.OnClickListener {
+public class MainActivity extends FragmentActivity implements View.OnClickListener {
 	private TextView welcome;
 	private TestWait testWait;
 	private TestSessionCallBack testSessionCallBack;
@@ -34,19 +37,20 @@ public class MainActivity extends Activity implements View.OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
-//		Button buttonLoginFragment = (Button) findViewById(R.id.buttonLoginFragment);
-//		buttonLoginFragment.setOnClickListener(this);
-//		welcome = (TextView) findViewById(R.id.welcome);
-//		printHashKey();
-//
-//		FragmentManager fragmentManager = getSupportFragmentManager();
-//		FragmentTransaction transaction = fragmentManager.beginTransaction();
-//		transaction.replace(R.id.container_frame, new SessionLoginFragment()).commit();
+		Button buttonLoginFragment = (Button) findViewById(R.id.buttonLoginFragment);
+		buttonLoginFragment.setOnClickListener(this);
+		welcome = (TextView) findViewById(R.id.welcome);
+		printHashKey();
+
+		FragmentManager fragmentManager = getSupportFragmentManager();
+		FragmentTransaction transaction = fragmentManager.beginTransaction();
+		transaction.replace(R.id.container_frame, new SessionLoginFragment()).commit();
 
 		// start Facebook Login
 		testWait = new TestWait();
 		testSessionCallBack = new TestSessionCallBack();
 		Session.openActiveSession(this, true, testSessionCallBack);
+		findViewById(R.id.lin).setOnClickListener(this);
 	}
 
 	private class TestWait implements Request.GraphUserCallback {
@@ -107,6 +111,8 @@ private static final String NAME = "name";
 
 	@Override
 	public void onClick(View view) {
+
+		if (view.getId() == R.id.loginFb) {
 //		startActivity(new Intent(this, LoginUsingLoginFragmentActivity.class));
 		// start Facebook Login
 		final Session activeSession = Session.getActiveSession();
@@ -162,6 +168,6 @@ private static final String NAME = "name";
 				}
 			});
 		}
-
+		}
 	}
 }
